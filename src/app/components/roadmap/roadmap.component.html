@@ -1,0 +1,31 @@
+<div *ngIf="contenido" class="roadmap-container">
+    <article class="roadmap-bloque" data-animate-effect="fadeInLeft">
+        <div class="roadmap-contenido">
+            <div class="roadmap-icon">
+                <i class="icon-pen2"></i>
+            </div>
+
+            <div class="roadmap-label">
+                <div class="flex align-center justify-between">
+                    <picture>
+                        <img src="{{contenido.logo.src}}" alt="{{contenido.logo.alt}}">
+                    </picture>
+                    <h3 class="center flex align-center">{{contenido.titulo}}</h3>
+                    <span class="rangoFechas text-center"><ng-container
+                            *ngIf="contenido.fechaInicio">{{contenido.fechaInicio}}<br><br></ng-container>{{contenido.fechaFin}}</span>
+                </div>
+                <ng-container *ngFor="let categoria of contenido.categorias">
+                    <h4>{{categoria.nombre}}</h4>
+                    <ul>
+                        <li *ngFor="let descripcion of categoria.descripciones">{{descripcion}}</li>
+                    </ul>
+                </ng-container>
+                <button *ngIf="contenido?.certificacion" class="btn-principal btn-certificacion">
+                    <a href="{{contenido.certificacion}}" target="_blank">
+                        Certificación
+                    </a>
+                </button>
+            </div>
+        </div>
+    </article>
+</div>

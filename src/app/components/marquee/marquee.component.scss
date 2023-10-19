@@ -1,0 +1,20 @@
+@import "utilidades/flex";
+
+.marquee {
+  width: 95%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.marquee-logo {
+  height: 100px;
+  padding: 10px;
+  @include flex;
+  @include align-items-center;
+  @include justify-content-center;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

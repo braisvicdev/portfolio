@@ -1,0 +1,195 @@
+@import "utilidades/variables";
+p,
+h3,
+h4 {
+    color: $white;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    padding-top: 20px;
+    color: $gray;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    list-style: none;
+}
+
+.roadmap-label {
+    picture {
+        img {
+            border-radius: 10%;
+        }
+    }
+}
+
+@media ($mediaDesktop) {
+    .roadmap-label {
+        ul {
+            max-width: 300px;
+        }
+    }
+}
+
+@media ($mediaDesktop) {
+    .roadmap-label {
+        picture {
+            width: 80px;
+            min-width: 80px;
+        }
+    }
+}
+
+@media ($mediaFromTabletV) and ($mediaToTabletH) {
+    .roadmap-label {
+        picture {
+            width: 80px;
+            min-width: 80px;
+        }
+    }
+}
+
+@media ($mediaMobile) {
+    .roadmap-label {
+        picture {
+            width: 50px;
+            min-width: 50px;
+        }
+    }
+}
+
+.roadmap-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.roadmap-container:before,
+.roadmap-container:after {
+    content: " ";
+    display: table;
+}
+
+.roadmap-container:after {
+    clear: both;
+}
+
+.roadmap-container:before,
+.roadmap-container:after {
+    content: " ";
+    display: table;
+}
+
+.roadmap-container:after {
+    clear: both;
+}
+
+.roadmap-container:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    background: $white;
+    top: 20px;
+    bottom: 20px;
+    margin-left: 29px;
+}
+
+.roadmap-container .roadmap-bloque {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.roadmap-container .roadmap-bloque .roadmap-contenido {
+    position: relative;
+    margin-left: -20px;
+}
+
+.roadmap-container .roadmap-bloque .roadmap-contenido .roadmap-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    -moz-box-shadow: 0 0 0 5px $white;
+    -webkit-box-shadow: 0 0 0 5px $white;
+    box-shadow: 0 0 0 5px $white;
+    line-height: 40px;
+    float: left;
+}
+.roadmap-container .roadmap-bloque .roadmap-contenido .roadmap-icon {
+    background: $primaryColor;
+}
+
+.roadmap-container .roadmap-bloque .roadmap-contenido .roadmap-label {
+    position: relative;
+    background: $cardBackground;
+    margin-left: 60px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.roadmap-container .roadmap-bloque .roadmap-contenido .roadmap-label p + p {
+    margin-top: 15px;
+}
+
+.roadmap-container .roadmap-bloque .roadmap-contenido .roadmap-label h3 {
+    margin: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.roadmap-container .roadmap-bloque .roadmap-contenido .roadmap-label h3 span {
+    -webkit-opacity: 5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    -ms-filter: alpha(opacity=40);
+    filter: alpha(opacity=40);
+    font-size: 16px;
+}
+
+.roadmap-label {
+    padding: 15px;
+}
+
+.roadmap-label h4 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.roadmap-label span {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.roadmap-label p {
+    font-size: 17px;
+    font-weight: 500;
+}
+.roadmap-label ul {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.btn-certificacion {
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+}

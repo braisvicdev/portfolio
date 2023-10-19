@@ -1,0 +1,5 @@
+<ngx-slick-carousel class="marquee" [config]="marqueeConfig">
+  <div ngxSlickItem *ngFor="let imagen of imagenes" class="marquee-logo">
+    <img src="{{imagen.src}}" alt="{{imagen.alt}}">
+  </div>
+</ngx-slick-carousel>

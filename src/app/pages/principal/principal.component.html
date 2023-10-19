@@ -1,0 +1,17 @@
+<app-header></app-header>
+<app-hero></app-hero>
+<div class="container">
+  <div data-aos="fade-left" data-aos-offset="600" data-aos-easing="ease-in-sine">
+    <app-presentacion id="presentacion" class="text-center"></app-presentacion>
+    <app-trayectoria id="trayectoria"></app-trayectoria>
+  </div>
+  <app-skills id="skills"></app-skills>
+  <app-banner data-aos="fade-up" data-aos-duration="3000" titulo="Gracias por tu atención y tu tiempo."
+    texto="No te voy a regalar un ebook ni te voy a sugerir que te subscribas a ninguna newsletter, mejor te dejo mi CV."
+    btnTxt="Descargar CV" btnLnk="{{_environment.cv_lnk}}"
+    imgSrc="{{_environment.base_url}}assets/images/banner.webp"></app-banner>
+</div>
+<h3 class="text-center">Tecnologías utilizadas sitio web</h3>
+<app-marquee [imagenes]=logosMarquee></app-marquee>
+<app-aside-contacto></app-aside-contacto>
+<app-footer></app-footer>

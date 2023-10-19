@@ -1,0 +1,56 @@
+@import "utilidades/variables";
+
+.banner-container {
+    border-radius: 20px;
+
+    .banner-tit {
+        color: $black;
+        margin-bottom: 0;
+        font-size: 35px;
+        line-height: 25px;
+    }
+
+    .banner-txt {
+        font-size: 20px;
+    }
+
+    button {
+        width: 250px;
+        background-color: $black;
+        a {
+            color: $white;
+        }
+    }
+}
+
+@media ($mediaFromMobile) {
+    .banner-container {
+        picture {
+            flex: 0 0 350px;
+        }
+        button {
+            width: 250px;
+        }
+    }
+}
+
+@media ($mediaMobile) {
+    .banner-container {
+        .blq-dcha {
+            padding-right: 15px;
+            h2 {
+                font-size: 25px;
+            }
+            p, .btn-principal {
+                font-size: 14px;
+            }
+        }
+        picture {
+            flex: 0 0 150px;
+        }
+        button {
+            width: 180px;
+            margin: 15px;
+        }
+    }
+}

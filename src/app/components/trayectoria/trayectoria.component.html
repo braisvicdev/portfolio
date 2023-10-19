@@ -1,0 +1,14 @@
+<div class="bloque-roadmap">
+    <div class="blq-izda">
+        <h2 class="text-center">Trayectoria Profesional</h2>
+        <app-roadmap *ngFor="let trayectoriaProf of trayectoriaProfesional" [contenido]="trayectoriaProf"></app-roadmap>
+    </div>
+    <div class="blq-dcha">
+        <h2 class="text-center">Trayectoria Académica</h2>
+        <app-roadmap *ngFor="let trayectoriaAcad of trayectoriaAcademica" [contenido]="trayectoriaAcad"></app-roadmap>
+        <div>
+            <h2 class="text-center">Formación Complementaria</h2>
+            <app-roadmap *ngFor="let formacionComp of formacionComplementaria" [contenido]="formacionComp"></app-roadmap>
+        </div>
+    </div>
+</div>
