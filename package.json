@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:prod": "ng build --configuration production --aot --subresource-integrity --base-href /portfolio-prueba/",
+    "build:prod": "ng build --configuration production --aot --subresource-integrity --base-href /portfolio/",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --configuration=dev",

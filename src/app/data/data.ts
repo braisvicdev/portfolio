@@ -22,7 +22,7 @@ export const MENU_ITEMS: IMenuItem[] = [
     },
     {
         label: 'Github',
-        href: `https://github.com/braisvicdev/portfolio-prueba`,
+        href: `https://github.com/braisvicdev/portfolio`,
         targetBlank: true
     },
     {
