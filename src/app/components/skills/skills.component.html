@@ -1,9 +1,9 @@
 <h2 class="text-center">Skills</h2>
 <div class="skills-container flex justify-center wrap">
-    <div class="blq-skill flex flex-column align-center" *ngFor="let skill of skills" data-aos="flip-left"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000">
-        <circle-progress class="skill-circle" [percent]="skill.progress" imageSrc="{{skill.logo?.src}}" [showImage]="skill.logo?.src ? true : false" [imageHeight]="80" [imageWidth]="80"></circle-progress>
-        <h4  class="text-center">{{skill.nombre}}</h4>
+    <div  *ngFor="let skill of skills" class="blq-skill flex flex-column align-center" data-aos="flip-left" data-aos-duration="1500"  data-aos-easing="linear">
+        <circle-progress class="skill-circle" [percent]="skill.progress"
+            imageSrc="{{skill.logo?.src}}" [showImage]="skill.logo?.src ? true : false" [imageHeight]="80"
+            [imageWidth]="80"></circle-progress>
+        <h4 class="text-center">{{skill.nombre}}</h4>
     </div>
 </div>
