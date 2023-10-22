@@ -1,50 +1,73 @@
 <header #header>
     <div class="flex container align-center">
         <picture class="logo">
-            <a href="/">
+            <a [href]="_environment.base_url">
                 <img src="assets/images/logos/logo.webp" alt="logo" />
             </a>
         </picture>
         <div class="menu-items flex">
             <div *ngFor="let itemMenu of itemsMenu">
-                <button class="menu-item" *ngIf="itemMenu?.subItems; else buttonBasic" mat-button
-                    [matMenuTriggerFor]="subMenu">{{itemMenu.label}}</button>
-
-                <ng-template #buttonBasic>
+                <ng-container *ngIf="!itemMenu?.subItems; else btnDesplegable">
                     <button mat-button>
-                        <a class="menu-item"  [linkExterno]= "itemMenu.href" [target]="determinarTargetBlank(itemMenu)">
+                        <a class="menu-item" [linkExterno]="itemMenu.href" [target]="determinarTargetBlank(itemMenu)">
                             {{itemMenu.label}}
                         </a>
                     </button>
+                </ng-container>
+                <ng-template #btnDesplegable>
+                    <button class="menu-item" mat-button [matMenuTriggerFor]="subMenu">{{itemMenu.label}} <i
+                            class="mdi mdi-menu-down"></i>
+                    </button>
                 </ng-template>
-
                 <mat-menu #subMenu="matMenu">
                     <ng-container *ngFor="let subitem of itemMenu.subItems">
                         <button mat-menu-item>
-                            <a class="menu-item"  [linkExterno]= "subitem.href" [target]="determinarTargetBlank(subitem)">
-                                {{itemMenu.label}}
+                            <a class="menu-subitem" [linkExterno]="subitem.href"
+                                [target]="determinarTargetBlank(subitem)">
+                                {{subitem.label}}
                             </a>
                         </button>
                     </ng-container>
                 </mat-menu>
             </div>
         </div>
-
         <div class="menuBurguer">
-            <input type='checkbox' #menuBurguerInput id='burguerElement' style="display: none;" />
-            <label #burguerBtn class='burguer-btn burguer-btn__cross' for='burguerElement' (click)="toggleMenu()">
+            <input type="checkbox" #menuBurguerInput id="burguerElement" style="display: none;" />
+            <label #burguerBtn class="burguer-btn burguer-btn__cross" for="burguerElement" (click)="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </label>
             <nav class="burguerNav">
                 <ul>
-                    <li *ngFor="let itemMenu of itemsMenu">
-                        <a (click)="clickMenuBurguerItem()"  [linkExterno] = "itemMenu.href" [target]="determinarTargetBlank(itemMenu)">{{itemMenu.label}}</a>
-                    </li>
+                    <ng-container *ngFor="let itemMenu of itemsMenu">
+                        <li *ngIf="!itemMenu.subItems" class="menu-item-burguer">
+                            <a (click)="clickMenuBurguerItem()" [linkExterno]="itemMenu.href"
+                                [target]="determinarTargetBlank(itemMenu)">{{itemMenu.label}}</a>
+                        </li>
+                        <ng-container *ngIf="itemMenu.subItems">
+                            <ng-container
+                                *ngTemplateOutlet="submenuBurguer; context: { menuItem: itemMenu }"></ng-container>
+                        </ng-container>
+                    </ng-container>
                 </ul>
             </nav>
         </div>
     </div>
-
 </header>
+
+<ng-template #submenuBurguer let-menuItem="menuItem">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{menuItem.label}}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <a class="menuBurguerSubItem" (click)="clickMenuBurguerItem()" [linkExterno]="subitem.href"
+                [target]="determinarTargetBlank(subitem)" *ngFor="let subitem of menuItem.subItems">
+                {{subitem.label}}
+            </a>
+        </mat-expansion-panel>
+    </mat-accordion>
+</ng-template>

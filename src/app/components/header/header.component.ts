@@ -3,6 +3,7 @@ import { Component, OnInit, HostListener, TemplateRef, ViewChild, Renderer2, Ele
 import { fromEvent } from 'rxjs';
 import { IMenuItem } from 'src/app/interfaces/interfaces';
 import { PrincipalService } from 'src/app/services/principal.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -28,16 +29,19 @@ export class HeaderComponent implements OnInit {
     @Inject(DOCUMENT) public document: Document
   ) { }
 
+  get _environment(): any {
+    return environment;
+  }
 
   ngOnInit() {
+    this.inicioStickyHeader();
+    this.subscripcionItemsMenu();
     fromEvent(window, 'scroll').subscribe(() => {
       this.stickyHeaderHandler(false);
     });
     fromEvent(window, 'resize').subscribe(() => {
       this.validacionMobile();
     });
-    this.subscripcionItemsMenu();
-    this.inicioStickyHeader();
   }
 
   subscripcionItemsMenu() {
@@ -118,9 +122,7 @@ export class HeaderComponent implements OnInit {
   }
 
   determinarTargetBlank(item: IMenuItem) {
-    let targetBlank;
-    item.targetBlank ? targetBlank = true : targetBlank = false;
-    return targetBlank;
+    return item.href.indexOf(environment.base_url) === -1 || item.targetBlank === true;
   }
 }
 

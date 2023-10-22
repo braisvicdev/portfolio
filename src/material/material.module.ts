@@ -4,6 +4,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatIconModule} from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatMenuModule,
     MatProgressSpinnerModule,
     MatIconModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatExpansionModule
 ],
   providers: [],
   exports: [
@@ -21,7 +23,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatMenuModule,
     MatProgressSpinnerModule,
     MatIconModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatExpansionModule
   ]
 })
 export class MaterialModule { }
