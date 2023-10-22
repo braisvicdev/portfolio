@@ -42,7 +42,10 @@ module.exports = function (config) {
     // 4 - Report
     colors: true,
     logLevel: config.LOG_INFO,
-    reporters: ['mocha'],
+    reporters: ['mocha', 'coverage'],
+    preprocessors: {
+      'src/**/*.ts': ['coverage'] // Indica a Karma que utilice el preprocesador de cobertura para los archivos TypeScript
+    },
 
     mochaReporter: {
       showDiff: false,
@@ -59,18 +62,9 @@ module.exports = function (config) {
     },
 
     // 5 - Coverage
-    // coverageReporter: {
-    //   dir: require('path').join(__dirname, './tests/output/coverage/neo-angular'),
-    //   subdir: '.',
-    //   reporters: [{ type: 'html' }, { type: 'text-summary' }],
-    //   check: {
-    //     global: {
-    //       statements: 75,
-    //       branches: 75,
-    //       functions: 75,
-    //       lines: 75,
-    //     },
-    //   },
-    // },
+    coverageReporter: {
+      dir: require('path').join(__dirname, 'coverage'), // Directorio donde se guardarán los informes de cobertura
+      reports: ['html', 'lcovonly', 'text-summary'], // Informes que quieres generar
+    },
   });
 };
