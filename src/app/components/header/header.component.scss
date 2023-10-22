@@ -182,7 +182,7 @@ header {
     }
 }
 
-#burguerElement:checked {
+#menuBurguerInput:checked {
     & ~ nav {
         opacity: 1;
         visibility: visible;
