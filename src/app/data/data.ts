@@ -275,7 +275,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '1',
+        id: '2',
         nombre: 'Angular Material',
         progress: 95,
         logo: {
@@ -284,7 +284,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '2',
+        id: '3',
         nombre: 'Scss',
         progress: 95,
         logo: {
@@ -302,7 +302,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '4',
+        id: '5',
         nombre: 'Typescript',
         progress: 90,
         logo: {
@@ -311,7 +311,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '4',
+        id: '6',
         nombre: 'Jasmine',
         progress: 70,
         logo: {
@@ -320,7 +320,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '5',
+        id: '7',
         nombre: 'Rxjs',
         progress: 70,
         logo: {
@@ -329,16 +329,16 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '5',
-        nombre: 'Node JS',
+        id: '8',
+        nombre: 'MySQL',
         progress: 80,
         logo: {
-            src: `${environment.base_url}assets/images/logos/node.webp`,
-            alt: 'Node JS'
+            src: `${environment.base_url}assets/images/logos/mysql.webp`,
+            alt: 'MySQL'
         },
     },
     {
-        id: '4',
+        id: '9',
         nombre: 'Php',
         progress: 80,
         logo: {
@@ -347,7 +347,16 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '4',
+        id: '10',
+        nombre: 'Php',
+        progress: 80,
+        logo: {
+            src: `${environment.base_url}assets/images/logos/php.webp`,
+            alt: 'PHP'
+        },
+    },
+    {
+        id: '11',
         nombre: 'Codeigniter',
         progress: 80,
         logo: {
@@ -356,7 +365,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '3',
+        id: '12',
         nombre: 'Gitlab',
         progress: 80,
         logo: {
@@ -365,7 +374,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '4',
+        id: '13',
         nombre: 'Symfony',
         progress: 60,
         logo: {
@@ -374,7 +383,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '4',
+        id: '14',
         nombre: 'Docker CI/CD',
         progress: 10,
         logo: {
