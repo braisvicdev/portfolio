@@ -2,7 +2,6 @@ import { environment } from "src/environments/environment";
 import { IImagen, IMenuItem, ISkill } from "../interfaces/interfaces";
 import { IRoadmap } from "../components/roadmap/roadmap.component";
 
-// TODO: Cambiar enlace github
 export const MENU_ITEMS: IMenuItem[] = [
     {
         label: 'Inicio',
@@ -44,9 +43,9 @@ export const TRAYECTORIA_PROFESIONAL: IRoadmap[] = [
             {
                 nombre: '',
                 descripciones: [
-                    'Formé parte del departamento I+D+I de la empresa desarrollando un Framework interno basado en Angular 12 el cuál será la base para el desarrollo ágil de proyectos durante los próximos años.',
+                    'Formé parte del departamento I+D+I de la empresa desarrollando un Framework interno basado en Angular 12, el cual será el cimiento para el desarrollo ágil de proyectos durante los próximos años.',
                     'He puesto en práctica y adquirido conocimientos de tecnologías como RXJS, Jasmine, Karma.',
-                    'He realizado amplias labores de investigación para conseguir un producto lo más eficiente y escalable posible las cuáles me han aportado un gran conocimiento en Angular a nivel interno del framework.'
+                    'He realizado amplias labores de investigación para conseguir un producto lo más eficiente y escalable posible, las cuales me han aportado un gran conocimiento en Angular a nivel interno del framework.'
                 ]
             },
             {
@@ -54,15 +53,15 @@ export const TRAYECTORIA_PROFESIONAL: IRoadmap[] = [
                 descripciones: [
                     'Implementación de una aplicación web con área de administración y pública para la gestión y reserva de eventos.',
                     'Implementación de un backoffice para el seguimiento de incidencias y generación de informes para una gran empresa nacional.',
-                    'Implementación de un backoffice para la centralización y simpilficación de procesos de la empresa.',
-                    'Desarrollo e integración de un Webcomponent en una aplicación web desarrollada en Php.',
+                    'Implementación de un backoffice para la centralización y simplificación de procesos de la compañía.',
+                    'Desarrollo e integración de un Webcomponent en una aplicación web implementada en Php.',
                     'Colaboración puntual en proyectos Ionic.'
                 ]
             },
             {
                 nombre: 'Backend (Node, Symfony)',
                 descripciones: [
-                    'Desarrollo Api Rest en Node Js para 2 de los proyectos mencionados anteriormente.',
+                    'Desarrollo Api Rest en Node Js para 2 de los proyectos mencionados.',
                     'Mantenimiento y evoluciones de una aplicación web de gestión de clubes deportivos basada en el Framework Symfony.',
                 ]
             },
@@ -87,7 +86,7 @@ export const TRAYECTORIA_PROFESIONAL: IRoadmap[] = [
                 nombre: '',
                 descripciones: [
                     'Maquetación y desarrollo Frontend de múltiples sitos web utilizando el framework Codeigniter.',
-                    'Desarrollo, evoluciones y mantenimientos de webs que utilizan el CMS Wordpress.'
+                    'Desarrollo, evoluciones y mantenimientos de webs que emplean el CMS Wordpress.'
                 ]
             },
         ]
@@ -104,7 +103,7 @@ export const TRAYECTORIA_PROFESIONAL: IRoadmap[] = [
             {
                 nombre: '',
                 descripciones: [
-                    'Desarrollo de un asistente de voz para mejorar la accesibilidad de varios e-commerce utilizando las tecnologías Node JS y Dialogflow entre otras.',
+                    'Implementación de un asistente de voz para mejorar la accesibilidad de varios e-commerces haciendo uso de las tecnologías Node JS y Dialogflow entre otras.',
                 ]
             },
         ]
@@ -124,13 +123,13 @@ export const TRAYECTORIA_FORMACION_COMPLEMENTARIA: IRoadmap[] = [
             {
                 nombre: 'Competencias',
                 descripciones: [
-                    'Elaborar un sistema de hospitales - para controlar médicos, hospitales y usuarios',
-                    'Implementar un panel administrativo con roles de usuario',
-                    'Dominar módulos, servicios, lazyload y más',
-                    'Implementar autenticación vía JWT',
-                    'Crear un backend usando Mongo, Express',
-                    'Utilizar Google Signin como una opción de login para nuestras aplicaciones',
-                    'Base sólida sobre pruebas unitarias y de integración'
+                    'Elaborar un sistema de hospitales - para controlar médicos, hospitales y usuarios.',
+                    'Implementar un panel administrativo con roles de usuario.',
+                    'Dominar módulos, servicios, lazyload y más.',
+                    'Implementar autenticación vía JWT.',
+                    'Crear un backend usando Mongo, Express.',
+                    'Utilizar Google Signin como una opción de login para nuestras aplicaciones.',
+                    'Base sólida sobre pruebas unitarias y de integración.'
                 ],
             },
         ],
@@ -147,7 +146,7 @@ export const TRAYECTORIA_FORMACION_COMPLEMENTARIA: IRoadmap[] = [
             {
                 nombre: 'Competencias',
                 descripciones: [
-                    'CSS3, Maquetación web, Responsive, SASS, LESS, Flexbox, CSS Grid Layout y Bootstrap',
+                    'CSS3, Maquetación web, Responsive, SASS, LESS, Flexbox, CSS Grid Layout y Bootstrap.',
                 ],
             },
         ],
@@ -164,12 +163,12 @@ export const TRAYECTORIA_FORMACION_COMPLEMENTARIA: IRoadmap[] = [
             {
                 nombre: 'Competencias',
                 descripciones: [
-                    'Aprender las técnicas básicas de testing',
-                    'Usar las herramientas específicas de Angular',
-                    'Dependencias para pruebas unitarias',
-                    'Probar la vista e interacción de los componentes',
-                    'Pruebas ágiles con Jest',
-                    'Pruebas E2E con Cypress'
+                    'Aprender las técnicas básicas de testing.',
+                    'Usar las herramientas específicas de Angular.',
+                    'Dependencias para pruebas unitarias.',
+                    'Probar la vista e interacción de los componentes.',
+                    'Pruebas ágiles con Jest.',
+                    'Pruebas E2E con Cypress.'
                 ],
             },
         ],
@@ -186,8 +185,8 @@ export const TRAYECTORIA_FORMACION_COMPLEMENTARIA: IRoadmap[] = [
             {
                 nombre: 'Competencias',
                 descripciones: [
-                    'Adquisición de los conocimientos teóricos y prácticos para la planificación, diseño, desarrollo e implementación de aplicaciones web',
-                    'Acceso a base de datos usando PHP y MySQL',
+                    'Adquisición de los conocimientos teóricos y prácticos para la planificación, diseño, desarrollo e implementación de aplicaciones web.',
+                    'Acceso a base de datos usando PHP y MySQL.',
                 ]
             },
         ]
@@ -203,7 +202,7 @@ export const TRAYECTORIA_FORMACION_COMPLEMENTARIA: IRoadmap[] = [
             {
                 nombre: 'Competencias',
                 descripciones: [
-                    'Conocer que es un sistema de control de versiones y cómo utilizarlo adecuadamente, así como el cómo utilizar dos de las herramientas más famosas para esto: GitHub y SourceTree.',
+                    'Conocer que es un sistema de control de versiones y cómo utilizarlo, así como el cómo utilizar dos de las herramientas más famosas para esto: GitHub y SourceTree.',
                 ]
             },
         ]
@@ -219,7 +218,7 @@ export const TRAYECTORIA_FORMACION_COMPLEMENTARIA: IRoadmap[] = [
             {
                 nombre: '',
                 descripciones: [
-                    'Javascript, jQuery, Angular y NodeJS'
+                    'Javascript, jQuery, Angular y NodeJS.'
                 ],
             }
         ],
@@ -236,7 +235,7 @@ export const TRAYECTORIA_FORMACION_COMPLEMENTARIA: IRoadmap[] = [
             {
                 nombre: '',
                 descripciones: [
-                    'PHP 8, Bases de Datos Relacionales, SQL, Laravel, Symfony, Wordpress',
+                    'PHP 8, Bases de Datos Relacionales, SQL, Laravel, Symfony, Wordpress.',
                 ],
             }
         ],
