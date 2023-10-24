@@ -347,6 +347,15 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
+        id: '10',
+        nombre: 'Node JS',
+        progress: 80,
+        logo: {
+            src: `${environment.base_url}assets/images/logos/node.webp`,
+            alt: 'Node JS'
+        },
+    },
+    {
         id: '11',
         nombre: 'Codeigniter',
         progress: 80,
