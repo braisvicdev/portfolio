@@ -294,6 +294,15 @@ export const SKILLS: ISkill[] = [
     },
     {
         id: '4',
+        nombre: 'Bootstrap',
+        progress: 95,
+        logo: {
+            src: `${environment.base_url}assets/images/logos/bootstrap.webp`,
+            alt: ' Scss'
+        },
+    },
+    {
+        id: '5',
         nombre: 'Javascript',
         progress: 90,
         logo: {
@@ -302,7 +311,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '5',
+        id: '6',
         nombre: 'Typescript',
         progress: 90,
         logo: {
@@ -311,7 +320,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '6',
+        id: '7',
         nombre: 'Jasmine',
         progress: 70,
         logo: {
@@ -320,7 +329,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '7',
+        id: '8',
         nombre: 'Rxjs',
         progress: 70,
         logo: {
@@ -329,7 +338,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '8',
+        id: '9',
         nombre: 'MySQL',
         progress: 80,
         logo: {
@@ -338,7 +347,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '9',
+        id: '10',
         nombre: 'Php',
         progress: 80,
         logo: {
@@ -347,7 +356,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '10',
+        id: '11',
         nombre: 'Node JS',
         progress: 80,
         logo: {
@@ -356,7 +365,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '11',
+        id: '12',
         nombre: 'Codeigniter',
         progress: 80,
         logo: {
@@ -365,7 +374,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '12',
+        id: '13',
         nombre: 'Gitlab',
         progress: 80,
         logo: {
@@ -374,7 +383,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '13',
+        id: '14',
         nombre: 'Symfony',
         progress: 60,
         logo: {
@@ -383,7 +392,7 @@ export const SKILLS: ISkill[] = [
         },
     },
     {
-        id: '14',
+        id: '15',
         nombre: 'Docker CI/CD',
         progress: 10,
         logo: {
