@@ -17,7 +17,7 @@
                 <ng-container *ngFor="let categoria of contenido.categorias">
                     <h4>{{categoria.nombre}}</h4>
                     <ul>
-                        <li *ngFor="let descripcion of categoria.descripciones">{{descripcion}}</li>
+                        <li *ngFor="let descripcion of categoria.descripciones" [innerHtml]="descripcion"></li>
                     </ul>
                 </ng-container>
                 <button *ngIf="contenido?.certificacion" class="btn-principal btn-certificacion">

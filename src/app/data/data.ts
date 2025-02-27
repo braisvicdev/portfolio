@@ -7,10 +7,10 @@ export const MENU_ITEMS: IMenuItem[] = [
         label: 'Inicio',
         href: ''
     },
-    {
-        label: 'Sobre mí',
-        href: `${environment.base_url}#presentacion`,
-    },
+    // {
+    //     label: 'Sobre mí',
+    //     href: `${environment.base_url}#presentacion`,
+    // },
     {
         label: 'Trayectoria',
         href: `${environment.base_url}#trayectoria`,
@@ -33,44 +33,42 @@ export const MENU_ITEMS: IMenuItem[] = [
 export const TRAYECTORIA_PROFESIONAL: IRoadmap[] = [
     {
         logo: {
-            src: `${environment.base_url}assets/images/logos/duacode.webp`,
-            alt: 'Logo Duacode'
+            src: `${environment.base_url}assets/images/logos/logo-ica.svg`,
+            alt: 'Logo ICA'
         },
-        fechaInicio: 'Enero 2021',
-        fechaFin: 'Enero 2023',
-        titulo: 'Desarrollador Full Stack',
+        fechaInicio: 'Febrero 2024',
+        fechaFin: 'Actualidad',
+        titulo: 'Desarrollador Frontend Angular',
         categorias: [
             {
-                nombre: '',
+                nombre: 'Proyecto',
                 descripciones: [
-                    'Formé parte del departamento I+D+I de la empresa desarrollando un Framework interno basado en Angular 12, el cual será el cimiento para el desarrollo ágil de proyectos durante los próximos años.',
-                    'He puesto en práctica y adquirido conocimientos de tecnologías como RXJS, Jasmine, Karma.',
-                    'He realizado amplias labores de investigación para conseguir un producto lo más eficiente y escalable posible, las cuales me han aportado un gran conocimiento en Angular a nivel interno del framework.'
+                    'Desarrollo Frontend en Angular, participando en nuevos proyectos del <b>Centro para el Desarrollo Tecnológico y la Innovación</b>, aplicando tecnologías punteras para la creación de interfaces modernas, accesibles y de alto rendimiento.'
                 ]
             },
             {
-                nombre: 'Frontend Angular',
+                nombre: 'Responsabilidades',
                 descripciones: [
-                    'Implementación de una aplicación web con área de administración y pública para la gestión y reserva de eventos.',
-                    'Implementación de un backoffice para el seguimiento de incidencias y generación de informes para una gran empresa nacional.',
-                    'Implementación de un backoffice para la centralización y simplificación de procesos de la compañía.',
-                    'Desarrollo e integración de un Webcomponent en una aplicación web implementada en Php.',
-                    'Colaboración puntual en proyectos Ionic.'
+                    '🤝 <b>Trabajo en equipo y colaboración</b>: Coordinación con los equipos de backend y diseño, asegurando una integración fluida mediante el uso de APIs REST, Figma y herramientas CI/CD para optimizar el flujo de desarrollo.',
+                    '🗣️ <b>Comunicación efectiva</b>: Interacción constante con los equipos de desarrollo, diseño y producto, utilizando metodologías ágiles como Scrum y herramientas de colaboración como Jira.',
+                    '🔄 <b>Adaptabilidad y aprendizaje continuo</b>: Capacidad de adaptación a nuevas herramientas y metodologías, manteniéndose actualizado con las últimas tendencias en desarrollo frontend.',
+                    '⏳ <b>Gestión del tiempo y organización</b>: Administración eficiente de tareas en un entorno ágil, priorizando entregables y asegurando cumplimiento de plazos dentro del marco Scrum.',
+                    '💡 <b>Resolución de problemas</b>: Análisis y solución de desafíos técnicos, buscando siempre mejorar la eficiencia y usabilidad de las aplicaciones desarrolladas.',
+                    '🚀 <b>Atención al detalle y mejora continua</b>: Búsqueda constante de optimización en el rendimiento y accesibilidad de las interfaces, asegurando una experiencia de usuario de alta calidad.'
                 ]
             },
             {
-                nombre: 'Backend (Node, Symfony)',
+                nombre: '🛠️ Tecnologías y herramientas utilizadas',
                 descripciones: [
-                    'Desarrollo Api Rest en Node Js para 2 de los proyectos mencionados.',
-                    'Mantenimiento y evoluciones de una aplicación web de gestión de clubes deportivos basada en el Framework Symfony.',
+                    '🚀 <b>Frameworks y lenguajes</b>: Angular v17 (aprovechando mejoras clave, como el uso de Signals) | TypeScript.',
+                    '🎨 <b>Estilos</b>: CSS3 | SASS | Tailwind | Storybook (documentación y visualización de componentes UI).',
+                    '📊 <b>Componentes y gestión de datos</b>: AG Grid (Tabla de datos altamente personalizable y optimizada para rendimiento).',
+                    '📂 <b>Control de versiones</b>: Git | Bitbucket | GitLab.',
+                    '🧪 <b>Testing</b>: Jasmine | Karma | Jest | Testing Library | SonarQube.',
+                    '🔗 <b>Microfrontends</b>: Implementación de arquitectura modular para aplicaciones escalables.',
+                    '🏛️ <b>Arquitectura</b>: Implementación de principios de arquitectura hexagonal para garantizar modularidad y escalabilidad, mejorando la integración con APIs externas y microservicios sin afectar el núcleo del negocio.'
                 ]
-            },
-            {
-                nombre: 'Soporte Técnico',
-                descripciones: [
-                    'Soporte técnico de software con una gran reputación en materia de atención al cliente y capacidad de resolución.',
-                ]
-            },
+            }
         ]
     },
     {
@@ -79,16 +77,38 @@ export const TRAYECTORIA_PROFESIONAL: IRoadmap[] = [
             alt: 'Logo Duacode'
         },
         fechaInicio: 'Septiembre 2020',
-        fechaFin: 'Diciembre 2020',
-        titulo: 'Desarrollador Frontend',
+        fechaFin: 'Enero 2023',
+        titulo: 'Desarrollador Full Stack',
         categorias: [
             {
-                nombre: '',
+                nombre: '🔬 Investigación, Desarrollo e Innovación (I+D+i)',
                 descripciones: [
-                    'Maquetación y desarrollo Frontend de múltiples sitos web utilizando el framework Codeigniter.',
-                    'Desarrollo, evoluciones y mantenimientos de webs que emplean el CMS Wordpress.'
+                    '🧩 Desarrollo de un framework interno basado en Angular 12, que servirá como base para el desarrollo ágil de proyectos dentro de la empresa en los próximos años.',
+                    '⚡ <b>Uso de tecnologías avanzadas</b>: Aplicación de RxJS, Jasmine y Karma para testing automatizado.',
                 ]
             },
+            {
+                nombre: 'Proyectos',
+                descripciones: [
+                    '📌 Aplicación web para la gestión de eventos.',
+                    '📌 Backoffice para el seguimiento de incidencias y generación de informes.',
+                    '📌 Backoffice para centralizar y optimizar procesos internos.',
+                    '📌 Colaboración en proyectos Ionic 📱, apoyando el desarrollo de aplicaciones móviles híbridas.'
+                ]
+            },
+            // {
+            //     nombre: 'Backend (Node.js & Symfony)',
+            //     descripciones: [
+            //         '📌 Desarrollo de API REST en Node.js para dos de los proyectos mencionados.',
+            //         '📌 Mantenimiento y evolución de una aplicación web para gestión de clubes deportivos ⚽ basada en Symfony.'
+            //     ]
+            // },
+            // {
+            //     nombre: 'Soporte Técnico',
+            //     descripciones: [
+            //         '📌 Soporte técnico de software con una gran reputación en materia de atención al cliente y capacidad de resolución.'
+            //     ]
+            // }
         ]
     },
     {
@@ -101,15 +121,15 @@ export const TRAYECTORIA_PROFESIONAL: IRoadmap[] = [
         titulo: 'Digital Developer Bootcamp',
         categorias: [
             {
-                nombre: '',
+                nombre: 'Implementación de un asistente de voz para mejorar la accesibilidad de varios e-commerces',
                 descripciones: [
-                    'Implementación de un asistente de voz para mejorar la accesibilidad de varios e-commerces haciendo uso de las tecnologías Node JS y Dialogflow entre otras.',
+                    '📌 Node.js para la gestión de lógica y APIs.',
+                    '📌 Mejora de la accesibilidad para facilitar la navegación e interacción sin requerir entrada manual.',
                 ]
             },
         ]
     },
-
-]
+];
 
 export const TRAYECTORIA_FORMACION_COMPLEMENTARIA: IRoadmap[] = [
     {
@@ -267,8 +287,8 @@ export const TRAYECTORIA_ACADEMICA: IRoadmap[] = [
 export const SKILLS: ISkill[] = [
     {
         id: '1',
-        nombre: 'Angular',
-        progress: 95,
+        nombre: 'Angular 17',
+        progress: 100,
         logo: {
             src: `${environment.base_url}assets/images/logos/angular.webp`,
             alt: 'Angular'
@@ -276,130 +296,139 @@ export const SKILLS: ISkill[] = [
     },
     {
         id: '2',
-        nombre: 'Angular Material',
-        progress: 95,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/angular-material.webp`,
-            alt: 'Angular Material'
-        },
-    },
-    {
-        id: '3',
-        nombre: 'Scss',
-        progress: 95,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/sass.webp`,
-            alt: ' Scss'
-        },
-    },
-    {
-        id: '4',
-        nombre: 'Bootstrap',
-        progress: 95,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/bootstrap.webp`,
-            alt: ' Scss'
-        },
-    },
-    {
-        id: '5',
-        nombre: 'Javascript',
-        progress: 90,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/js.webp`,
-            alt: ' Javascript'
-        },
-    },
-    {
-        id: '6',
         nombre: 'Typescript',
-        progress: 90,
+        progress: 100,
         logo: {
             src: `${environment.base_url}assets/images/logos/ts.webp`,
             alt: ' Typescript'
         },
     },
     {
-        id: '7',
-        nombre: 'Jasmine',
-        progress: 70,
+        id: '3',
+        nombre: 'Javascript',
+        progress: 100,
         logo: {
-            src: `${environment.base_url}assets/images/logos/jasmine.webp`,
-            alt: ' Jasmine'
+            src: `${environment.base_url}assets/images/logos/js.webp`,
+            alt: ' Javascript'
         },
     },
+    // {
+    //     id: '2',
+    //     nombre: 'Angular Material',
+    //     progress: 95,
+    //     logo: {
+    //         src: `${environment.base_url}assets/images/logos/angular-material.webp`,
+    //         alt: 'Angular Material'
+    //     },
+    // },
+    {
+        id: '4',
+        nombre: 'Tailwind / SCSS',
+        progress: 100,
+        logo: {
+            src: `${environment.base_url}assets/images/logos/tailwind.png`,
+            alt: ' Tailwind'
+        },
+    },
+    // {
+    //     id: '4',
+    //     nombre: 'Bootstrap',
+    //     progress: 95,
+    //     logo: {
+    //         src: `${environment.base_url}assets/images/logos/bootstrap.webp`,
+    //         alt: ' Scss'
+    //     },
+    // },
+    {
+        id: '5',
+        nombre: 'Jest',
+        progress: 70,
+        logo: {
+            src: `${environment.base_url}assets/images/logos/jest.png`,
+            alt: ' Jest'
+        },
+    },
+    {
+        id: '6',
+        nombre: 'Testing Library',
+        progress: 70,
+        logo: {
+            src: `${environment.base_url}assets/images/logos/testing-library.png`,
+            alt: ' Testing Library'
+        },
+    },
+    {
+        id: '7',
+        nombre: 'Microfrontends',
+        progress: 70,
+        logo: {
+            src: `${environment.base_url}assets/images/logos/native-federation.png`,
+            alt: ' Native Federation'
+        },
+    },
+    // {
+    //     id: '9',
+    //     nombre: 'MySQL',
+    //     progress: 80,
+    //     logo: {
+    //         src: `${environment.base_url}assets/images/logos/mysql.webp`,
+    //         alt: 'MySQL'
+    //     },
+    // },
+    // {
+    //     id: '10',
+    //     nombre: 'Php',
+    //     progress: 80,
+    //     logo: {
+    //         src: `${environment.base_url}assets/images/logos/php.webp`,
+    //         alt: 'PHP'
+    //     },
+    // },
     {
         id: '8',
-        nombre: 'Rxjs',
-        progress: 70,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/rxjs.webp`,
-            alt: ' Rxjs'
-        },
-    },
-    {
-        id: '9',
-        nombre: 'MySQL',
-        progress: 80,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/mysql.webp`,
-            alt: 'MySQL'
-        },
-    },
-    {
-        id: '10',
-        nombre: 'Php',
-        progress: 80,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/php.webp`,
-            alt: 'PHP'
-        },
-    },
-    {
-        id: '11',
         nombre: 'Node JS',
-        progress: 80,
+        progress: 30,
         logo: {
             src: `${environment.base_url}assets/images/logos/node.webp`,
             alt: 'Node JS'
         },
     },
-    {
-        id: '12',
-        nombre: 'Codeigniter',
-        progress: 80,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/codeigniter.webp`,
-            alt: 'Codeigniter'
-        },
-    },
-    {
-        id: '13',
-        nombre: 'Gitlab',
-        progress: 80,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/gitlab.webp`,
-            alt: 'Gitlab'
-        },
-    },
-    {
-        id: '14',
-        nombre: 'Symfony',
-        progress: 60,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/symfony.webp`,
-            alt: 'Symfony'
-        },
-    },
-    {
-        id: '15',
-        nombre: 'Docker CI/CD',
-        progress: 10,
-        logo: {
-            src: `${environment.base_url}assets/images/logos/docker.webp`,
-            alt: 'Docker'
-        }
-    },
+    // {
+    //     id: '12',
+    //     nombre: 'Codeigniter',
+    //     progress: 80,
+    //     logo: {
+    //         src: `${environment.base_url}assets/images/logos/codeigniter.webp`,
+    //         alt: 'Codeigniter'
+    //     },
+    // },
+    // {
+    //     id: '13',
+    //     nombre: 'Git/Gitlab',
+    //     progress: 80,
+    //     logo: {
+    //         src: `${environment.base_url}assets/images/logos/gitlab.webp`,
+    //         alt: 'Gitlab'
+    //     },
+    // },
+    // {
+    //     id: '14',
+    //     nombre: 'Symfony',
+    //     progress: 60,
+    //     logo: {
+    //         src: `${environment.base_url}assets/images/logos/symfony.webp`,
+    //         alt: 'Symfony'
+    //     },
+    // },
+    // {
+    //     id: '15',
+    //     nombre: 'Docker CI/CD',
+    //     progress: 10,
+    //     logo: {
+    //         src: `${environment.base_url}assets/images/logos/docker.webp`,
+    //         alt: 'Docker'
+    //     }
+    // },
 ];
 
 export const LOGOS_MARQUEE: IImagen[] = [
